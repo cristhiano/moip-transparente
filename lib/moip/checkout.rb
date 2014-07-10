@@ -19,7 +19,8 @@ module Moip
 
     def get_token(invoice)
       doc = XML::Document.new
-      doc.root = XML::Node.new('EnviarInstrucao')    
+      doc.root = XML::Node.new('EnviarInstrucao')   
+
 
       unica = XML::Node.new('InstrucaoUnica')
       unica['TipoValidacao'] = 'Transparente'
